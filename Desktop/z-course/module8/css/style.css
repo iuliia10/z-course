@@ -1,0 +1,167 @@
+body{
+    background-image:linear-gradient(white, black) ;
+}
+
+header img {
+
+      /*width 100%- This streches the image across viewport.*/
+    width: 100%; 
+     /* height auto- This height will change based on the size of the viewport.*/
+    height: auto;
+    max-width: 500px;
+}
+nav{ 
+    background-color: white;
+    border-top:solid 0.3em black ;
+    border-bottom: solid 0.3em black;
+    border-radius: 1.0em;/*border radius rounds the corner of element*/
+    margin-bottom: 1em;/* mergin make some spaces between elements.*/
+    font-weight: bold;
+    text-align: center;
+}
+nav ul {
+    padding: 0;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+}
+nav ul li { 
+    background-color: black;
+    padding: 1em;
+    min-width: 12%;
+    margin: .25em;
+    list-style-type: none;/*This removes bullet points*/
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;/* This removes the underline from the hyperlink.*/
+}
+
+
+figure{
+    text-align: center;
+    background-color: white;
+}
+figure img{
+    max-width: 800px;
+    
+    width: 100%;
+    height: auto;
+   
+}
+
+
+main{
+    background-color: white;
+    border-top:solid 0.3em black ;
+    border-bottom: solid 0.3em black;
+    border-radius: 1.0em;/*border radius rounds the corner of element*/
+    margin-bottom: 1em;/* mergin make some spaces between elements.*/
+}
+
+main  .row::after {
+    content: "";
+    display: table;
+    clear:both;
+}
+
+ main div .column{
+    float: left;
+}
+
+main div.left{
+    padding: 10px;
+    width: 20%;
+    float: left;
+    border-right: 3px solid black;
+}
+
+ main div .ceter{
+      padding: 10px;
+      width: 35%;
+
+}
+ main div .right{
+    float: right;
+    padding: 10px;
+    width: 30%;
+    border-left: 3px solid black;
+   
+}
+
+footer{
+    background-color: white;
+    border-top:solid 0.3em black ;
+    border-bottom: solid 0.3em black;
+    border-radius: 1.0em; /*border radius rounds the corner of element*/
+
+}
+
+/* @media begin mobile*/
+@media screen and (max-width: 640px) {
+    nav ul li{
+        border-radius: 1em;
+    }
+    
+    .tablet{
+        display: none;
+    }
+    .desktop{
+        display: none;
+    }
+}
+/* End mobile*/
+
+
+
+/* Begin tablet*/
+@media screen and (min-width: 641px) {
+    nav ul li{
+        display: inline-block; /* This list items horrizontaly and allows them to stretch.*/
+        border-radius: 1em;
+    }
+    .desktop{
+        display: none;
+    }
+    
+}
+    
+
+/* End tablet*/
+
+
+
+/* @media begin desktop*/
+@media screen and (min-width: 961px) {
+  
+    header img{
+        width: auto;
+        height: 5em;
+    }
+
+    
+
+    nav {
+        margin-top: -5.1em;/* This moves the element above where it would normally be*/
+        width: 60%;
+        float: right;/*This floats the nav element to the right side og the page.*/
+    }
+        
+    
+    nav ul li{
+        display: inline-block; /* This list items horrizontaly and allows them to stretch.*/
+        border-radius: 1em;
+        
+    }
+    .desktop {
+        display:block;
+    }
+    
+}
+
+/* End desktop*/
+
+
+
+
+
+
